@@ -1,4 +1,4 @@
-<em>D# DRY-Don't-Repeat-Yourself</em>
+<b> DRY-Don't-Repeat-Yourself</bs>
 This is an application to show how often words are repeated in famous books.
 
 DRY is a software development principle which emphasizes brevity and concicesness when writing code. 
