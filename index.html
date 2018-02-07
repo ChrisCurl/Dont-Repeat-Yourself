@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <script>document.body.classList.add('fade-out')</script>
         <head>
             <title> DRY - Don't Repeat Yourself</title>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
             <link rel="stylesheet" href="index.css" type="text/css" />
             <link href="https://fonts.googleapis.com/css?family=Alegreya|Pacifico" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400i" rel="stylesheet">
+
         </head>
+        <div class = 'mainHeader'>
+            <h1 class = 'shadow'>Don't Repeat Yourself<br><span class = 'instructions'>Select a book below</span></br></h1>
+            <p class = 'description'>"Don't Repeat Yourself" is a common software development principle which emphasizes brevity and conciseness when writing code. This application shows several famous works and how often a particular word is repeated in that text.</p>
+        </div>
         <div class = 'centerBox'>
             <div class = 'container'>
-               <ul></ul>
+               <ul class = 'flex'></ul>
             </div>
             <div class = 'container rightbox'>
-                <span>Book Name has num words repeated.</span>
-                <input type = 'textarea' name = 'userString' rows = '4' cols = '50'>
+                <h3 class = 'wordsHeader'><span class = 'bookName'></span> has <span class = 'wordsNum'></span> words repeated.</h3>
+                <hr>
+                <div class = ''><ol class = 'wordList top10 slide-fade'></ol></div>
+               <!-- <input type = 'textarea' name = 'userString' rows = '4' cols = '50'> -->
 
             </div>
 
         </div>
+        <footer><div class = 'footerDiv'>Created By Chris Curl - Feb 2018 <a target = '_blank' href = 'https://github.com/borderwave2'><i class = 'fab fa-github'></i></a></div></footer>
     </body>
+    <script src ='Books/books.js' type='text/javascript'></script>
     <script type="text/javascript" src="index.js"></script>
 </html>
