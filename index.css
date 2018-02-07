@@ -1,28 +1,64 @@
-body{
-    background: linear-gradient(to right, #e1fcb3, #aef2ee);
-    font-family: 'Pacifico', cursive;
-
-}
-
-.container {
-    width: 48%;
-    background: #f2f2f2;
-    display: inline-block;
-
-}
-.rightbox {
-    float: right;
-    margin-bottom: 5px;
-}
-
-.container .leftbox{
+html {
 
     
 }
+body{
+    opacity: 1;
+    transition: 2s opacity;
+    background: linear-gradient(to right, #e1fcb3, #aef2ee);
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.mainHeader{
+    margin: 0px auto 20px auto;
+    width: 35%;
+}
+
+.instructions {
+    font-size: .5em;
+}
+.mainHeader h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    font-size: 3.55em;
+    margin-bottom: 0;
+}
+
+.shadow {
+    text-shadow: 2px 2px 12px #ffe0e0;
+    
+}
+.description{
+    text-align: center;
+    opacity: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: auto;
+    
+}
+
+.container {
+ 
+    font-family: 'Pacifico', cursive;
+}
+
+hr {
+    width: 50%;
+}
+.rightbox {
+    margin-bottom: 5px;
+    margin-top: 100px;
+    margin:auto;
+
+}
 
 .centerBox {
-    margin: 300px auto;
-    width: 700px;
+    margin: auto;
+    width: 75%;
     box-shadow: 1px 1px 4px .5px black;
 }
 
@@ -32,6 +68,91 @@ input{
 
 .book {
         text-align: center;
-        border-style: solid;
-        width: 40%;
+        box-shadow: 0 0 4px black;
+        background: #f2f2f2;
+        width: 33%;
+        margin: 5px 10px 5px 10px;
+}
+
+img{
+    width: 106px;
+    height: 160px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.wordsHeader {
+    text-align: center;
+}
+
+.centerLi{
+    margin-left: 45%;
+    width: 250px;
+}
+
+.fadeIn{
+    opacity: 1;
+    transition: 0.7s opacity;
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: 0.7s opacity;
+}
+
+.flex {
+    display: flex;
+    padding-left: 0px;
+}
+
+
+.invisible {
+    opacity: 0;
+}
+
+
+.top10 li {
+    height: 0;
+    overflow: hidden;
+}
+
+.top10 li.show {
+    height: 2em;
+    margin-top: 2px;
+}
+
+.slide-fade li {
+    transition: all .4s ease-out;
+    opacity: 0;
+}
+
+.slide-fade li.show {
+    opacity: 1;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #d8d8d8;
+    opacity: .6;
+    display: inline-block;
+}
+
+.footerDiv  {
+    margin-top: 5px;
+    margin-left: 150px;
+    width: 80%;
+}
+
+.fa-github {
+    float: right;
 }
